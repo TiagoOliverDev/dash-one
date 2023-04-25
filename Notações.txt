@@ -1,0 +1,20 @@
+Curso: https://www.youtube.com/watch?v=wLH1Vv86I44&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=1&ab_channel=LucasSouzaDev
+
+
+criando projeto com CRA e typescript: npx create-react-app dash-one --template typescript
+
+Padronização de projeto: https://www.youtube.com/watch?v=L5nJhLkvBxU&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=2&ab_channel=LucasSouzaDev
+
+DICA: No vídeo acima aprendemos a publicar um repositório a partir do própio vs code
+
+Estruturando pastas: https://www.youtube.com/watch?v=88EEdbp98mM&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=3&ab_channel=LucasSouzaDev
+
+
+Instalando React Router Dom v6: https://www.youtube.com/watch?v=44QQtoEy3ik&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=4&ab_channel=LucasSouzaDev
+
+- Doc oficial: https://reactrouter.com/en/main/start/overview
+- Serve para o roteamento, ou seja criar páginas na nossa aplicação
+- Comando para instalar: yarn add react-router-dom@6
+- Após instalado é só seguir a doc para configurar o projeto de acordo com ela.
+- Básicamente alteramos o App.tsx para chamar o contexto do browser router
+
