@@ -18,3 +18,9 @@ Instalando React Router Dom v6: https://www.youtube.com/watch?v=44QQtoEy3ik&list
 - Após instalado é só seguir a doc para configurar o projeto de acordo com ela.
 - Básicamente alteramos o App.tsx para chamar o contexto do browser router
 
+Instalando Material UI 5: https://www.youtube.com/watch?v=1JWGiAnR4C0&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=5&ab_channel=LucasSouzaDev
+
+- Doc oficial: https://mui.com/material-ui/getting-started/installation/
+- Comando para instalar: yarn add @mui/material @emotion/react @emotion/styled
+- Adicionamos os links de fonts e icones em public/index.html
+- Comando para usar icones SVG (recomendação React): yarn add @mui/icons-material
