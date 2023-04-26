@@ -24,3 +24,7 @@ Instalando Material UI 5: https://www.youtube.com/watch?v=1JWGiAnR4C0&list=PL29T
 - Comando para instalar: yarn add @mui/material @emotion/react @emotion/styled
 - Adicionamos os links de fonts e icones em public/index.html
 - Comando para usar icones SVG (recomendação React): yarn add @mui/icons-material
+
+
+Configurando tema no MUI: https://www.youtube.com/watch?v=NcGt1dYM1sQ&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=6&ab_channel=LucasSouzaDev
+
