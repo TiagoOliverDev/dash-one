@@ -7,7 +7,7 @@ export const LightTheme = createTheme({
             main: yellow[700],
             dark: yellow[800],
             light: yellow[500],
-            contrastText: '#ffffff',
+            contrastText: '#ffffff', //serve para o texto
         },
         secondary: {
             main: cyan[500],
