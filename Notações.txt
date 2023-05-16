@@ -32,3 +32,9 @@ Configurando tema no MUI: https://www.youtube.com/watch?v=NcGt1dYM1sQ&list=PL29T
 - No light.ts configuramos o padrão de cores para o tema light
 - No dark.ts configuramos o padrão de cores para o tema dark
 - Como usar o tema ? Agora vamos no nosso src/App.tsx e envolvemos todo o código do return dentro de um <ThemeProvider theme={funçãoDoTema} ><ThemeProvider/>
+
+
+Atualizando React 17 para 18: https://www.youtube.com/watch?v=Q05x706QWhE&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=7&ab_channel=LucasSouzaDev
+
+- comando: yarn add react react-dom
+- comando yarn add @types/react @types/react-dom
