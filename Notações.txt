@@ -38,3 +38,15 @@ Atualizando React 17 para 18: https://www.youtube.com/watch?v=Q05x706QWhE&list=P
 
 - comando: yarn add react react-dom
 - comando yarn add @types/react @types/react-dom
+
+
+Configurando tema escuro e a troca de tema: 
+- Criamos o Dark.ts em src/shared/themes
+- Chamamos ele no index.ts do mesmo caminho
+- Em src/shared/contexts criamos o arquivo ThemeContext.tsx e nele criamos o contexto do Theme para ser usada em outras partes do sistema
+- Depois exportamos o ThemeContext no index do mesmo caminho
+- Em src/routes usamos o context criado para o tela e chamamos a função toggleTheme dentro de um button no onclick, onde esse button serve para alterar o tema
+- Em src/App.tsx envolvemos todo o código com o context criado
+- Em public/index.html no body adicionamos margin 0 e padding 0 para resolver bugs de scroll background
+
+
