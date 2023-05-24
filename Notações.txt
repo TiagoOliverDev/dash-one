@@ -50,3 +50,12 @@ Configurando tema escuro e a troca de tema:
 - Em public/index.html no body adicionamos margin 0 e padding 0 para resolver bugs de scroll background
 
 
+Criando menu lateral: https://www.youtube.com/watch?v=9OdXDXY5RAQ&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=10&ab_channel=LucasSouzaDev
+- Usar componente Drawer do MUI: https://mui.com/material-ui/react-drawer/
+- Em components criamos o MenuLateral.tsx (src/shared/components/menu-lateral/MenuLateral.tsx)
+- Nele usamos os devidos componentes para criar o menu lateral, nesse arquivo recebemos um children, que no caso esse children será a página renderizada na direita
+- Em src/App.tsx importamos nosso MenuLateral e colocamos nosso AppRoutes dentro dele, agr o AppRoutes será a children do MenuLateral
+- Feito isso o menu lateral sempre vai se manter fixo e na direita poderá ser renderizado várias páginas de acordo com o projeto
+
+
+
