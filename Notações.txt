@@ -58,4 +58,10 @@ Criando menu lateral: https://www.youtube.com/watch?v=9OdXDXY5RAQ&list=PL29TaWXa
 - Feito isso o menu lateral sempre vai se manter fixo e na direita poderá ser renderizado várias páginas de acordo com o projeto
 
 
-
+Drawer responsivo: https://www.youtube.com/watch?v=bFxJ0-F2Hl4&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=11&ab_channel=LucasSouzaDev
+- No MUI5 pesquisamos por useMediaQuery() e vimos suas propriedades. Esse hook serve para trabalhar com responsividade em React
+- No MenuLateral.tsx chamamos o useMediaQuery com suas devidas propriedades
+- No Drawer inserimos as validações
+- Depois criamos um context chamado DraweContext.tsx e nele fizemos a lógica necessária e importamos no index.ts da pasta contexts
+- Dentro do nosso App.tsx envolvemos todos os import dentro do nosso DrawerProvider para que ele tenha efeito sobre todos os componentes children futuros
+- No index do routes apenas usamos o context criado e adicionamos a funcionalidade no botão
