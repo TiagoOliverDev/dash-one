@@ -65,3 +65,11 @@ Drawer responsivo: https://www.youtube.com/watch?v=bFxJ0-F2Hl4&list=PL29TaWXah3i
 - Depois criamos um context chamado DraweContext.tsx e nele fizemos a lógica necessária e importamos no index.ts da pasta contexts
 - Dentro do nosso App.tsx envolvemos todos os import dentro do nosso DrawerProvider para que ele tenha efeito sobre todos os componentes children futuros
 - No index do routes apenas usamos o context criado e adicionamos a funcionalidade no botão
+
+
+Opções do drawer: https://www.youtube.com/watch?v=63chTxv8MPM&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=12&ab_channel=LucasSouzaDev
+- No nosso MenuLateral.tsx criamos uma outra function ListItemLink() que será responsável por retornar as opções de menu de forma dinâmica
+- No DraweContext.tsx criamos a função handleSetDrawerOptions() que de fato seta essas opções de menu
+- E no index do routes dentro de um useEffect estamos usando setDrawerOptions para setar as opções de menu desejada
+
+

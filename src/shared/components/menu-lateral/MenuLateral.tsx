@@ -14,6 +14,40 @@ import {
 } from "@mui/material";
 import { Inbox } from "@mui/icons-material";
 import { useDrawerContext } from "../../contexts";
+import { useMatch, useNavigate, useResolvedPath } from "react-router-dom";
+
+interface ListItemLinkProps {
+  label: string;
+  icon: string;
+  to: string; //serve para ir para outra rota
+  onClick: (() => void) | undefined; //serve para quando eu estiver com o menu lateral aberto e clicar na opção de menu, vou querer fechar o menu lateral
+}
+
+const ListItemLink: React.FC<ListItemLinkProps> = ({
+  label,
+  icon,
+  to,
+  onClick,
+}) => {
+  const navigate = useNavigate();
+
+  const resolvePath = useResolvedPath(to); //pega dentro do router dom e vai interpretar para deixar algumas config disponiveis
+  const match = useMatch({ path: resolvePath.pathname, end: false }); // agora o nosso match irá saber se nossa opção de menu está selecionada ou não
+
+  const handleClick = () => {
+    navigate(to);
+    onClick?.();
+  };
+
+  return (
+    <ListItemButton selected={!!match} onClick={handleClick}>
+      <ListItemIcon>
+        <Icon>{icon}</Icon>
+      </ListItemIcon>
+      <ListItemText primary={label} />
+    </ListItemButton>
+  );
+};
 
 export const MenuLateral: React.FC<{ children: ReactNode }> = ({
   children,
@@ -21,11 +55,15 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({
   const theme = useTheme(); //useTheme consegue acessar o tema base da nossa aplicação
   const smDown = useMediaQuery(theme.breakpoints.down("sm")); //hook do material ui para responsividade, nesse caso retorna true se for menor que 600px
 
-  const { isDrawerOpen, toggleDrawerOpen } = useDrawerContext();
+  const { isDrawerOpen, toggleDrawerOpen, drawerOptions } = useDrawerContext();
 
   return (
     <>
-      <Drawer open={isDrawerOpen} variant={smDown ? "temporary" : "permanent"} onClose={toggleDrawerOpen}>
+      <Drawer
+        open={isDrawerOpen}
+        variant={smDown ? "temporary" : "permanent"}
+        onClose={toggleDrawerOpen}
+      >
         <Box
           width={theme.spacing(28)}
           height="100%"
@@ -48,15 +86,18 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({
           <Divider />
 
           <Box flex={1}>
-            {" "}
             {/* Aqui significa que esse box vai ter todo o restante do espaço disponível */}
             <List component="nav">
-              <ListItemButton>
-                <ListItemIcon>
-                  <Icon>home</Icon>
-                </ListItemIcon>
-                <ListItemText primary="Página inicial" />
-              </ListItemButton>
+              {/* Ṕercorrendo nosso drawerOptions para setar opções de menu dinâmicamente */}
+              {drawerOptions.map(drawerOption => (
+                <ListItemLink
+                  to={drawerOption.path}
+                  key={drawerOption.path}
+                  icon={drawerOption.icon}
+                  label={drawerOption.label}
+                  onClick={smDown ? toggleDrawerOpen : undefined}
+                />
+              ))}
             </List>
           </Box>
         </Box>

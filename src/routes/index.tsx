@@ -1,10 +1,28 @@
 import { Button } from "@mui/material"
 import { Routes, Route, Navigate } from "react-router-dom"
 import { useDrawerContext } from "../shared/contexts"
+import { useEffect } from "react";
 
 export const AppRoutes = () => {
 
-    const { toggleDrawerOpen } = useDrawerContext();
+    const { toggleDrawerOpen, setDrawerOptions } = useDrawerContext();
+
+    // useEffect garante que o que estiver dentro dele seja executado somente uma vez
+    useEffect(() => {
+        //setando as opções de menu na sidebar lateral
+        setDrawerOptions([
+            {
+                icon: "home",
+                path: "/pagina-inicial",
+                label: "Página inicial",
+            },
+            {
+                icon: "star",
+                path: "/teste",
+                label: "Star",
+            },
+        ]);
+    }, []);
 
     return(
         <Routes>
