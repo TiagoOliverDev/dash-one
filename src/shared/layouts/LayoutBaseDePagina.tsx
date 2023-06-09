@@ -12,19 +12,21 @@ import { useDrawerContext } from "../contexts";
 interface ILayoutBaseDePaginaProps {
   titulo: string;
   children: React.ReactNode;
+  barraDeFerramentas?: React.ReactNode; //tem o "?" pq ele pode ser "undefined" ou seja, pode haver um caso em que eu não queira mostrar essa barra
 }
 
 //iremos usar esse layout dentro de cada uma das nossas rotas, dentro da página que quisermos!
 export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({
   children,
   titulo,
+  barraDeFerramentas,
 }) => {
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down("sm"));
+  const mdDown = useMediaQuery(theme.breakpoints.down("md"));
 
   // toggleDrawerOpen é a função para abrir o drawer de menu lateral
-  const { toggleDrawerOpen } = useDrawerContext()
-  
+  const { toggleDrawerOpen } = useDrawerContext();
 
   return (
     <Box height="100%" display="flex" flexDirection="column" gap={1}>
@@ -32,19 +34,32 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({
         padding={1}
         display="flex"
         alignItems="center"
-        height={theme.spacing(12)}
         gap={1}
+        height={theme.spacing(smDown ? 6 : mdDown ? 8 : 12)}
       >
         {smDown && ( //se smDown == true ai mostra o menu hamburguer
-          <IconButton onClick={toggleDrawerOpen} > 
+          <IconButton onClick={toggleDrawerOpen}>
             <Icon>menu</Icon>
           </IconButton>
         )}
 
-        <Typography variant="h5">{titulo}</Typography>
+        <Typography 
+          overflow="hidden"
+          whiteSpace="nowrap"
+          textOverflow="ellipsis"
+          variant={smDown ? "h5" : mdDown ? "h4" : "h3"}
+         >
+          {titulo}
+        </Typography>
       </Box>
-      <Box>Barra de ferramentas</Box>
-      <Box>{children}</Box>
+
+      {barraDeFerramentas && (
+        <Box>
+          {barraDeFerramentas}
+        </Box>
+      )}
+
+      <Box flex={1} overflow="auto">{children}</Box> 
     </Box>
   );
 };

@@ -79,3 +79,7 @@ Criando layout base para as páginas: https://www.youtube.com/watch?v=AGapA_SvEW
 - em src/pages criamos o componente dashboard e nele chamamos o LayoutBaseDePagina e dentro dele podemos passar o conteúdo children
 - em src/pages importamos o componente dashboard criado
 - em src/routes importamos o Dashboard dentro do parâmetro element do router /pagina-inicial
+
+
+Layout base responsivo: https://www.youtube.com/watch?v=OGLN3GTh2Yg&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=14&ab_channel=LucasSouzaDev
+- criado configuração de responsividade base no LayoutBaseDePagina
