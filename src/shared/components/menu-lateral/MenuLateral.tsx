@@ -13,7 +13,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { Inbox } from "@mui/icons-material";
-import { useDrawerContext } from "../../contexts";
+import { useAppThemeContext, useDrawerContext } from "../../contexts";
 import { useMatch, useNavigate, useResolvedPath } from "react-router-dom";
 
 interface ListItemLinkProps {
@@ -56,6 +56,7 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({
   const smDown = useMediaQuery(theme.breakpoints.down("sm")); //hook do material ui para responsividade, nesse caso retorna true se for menor que 600px
 
   const { isDrawerOpen, toggleDrawerOpen, drawerOptions } = useDrawerContext();
+  const { toggleTheme } = useAppThemeContext(); //hook para ferramentas do nosso tema
 
   return (
     <>
@@ -89,7 +90,7 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({
             {/* Aqui significa que esse box vai ter todo o restante do espaço disponível */}
             <List component="nav">
               {/* Ṕercorrendo nosso drawerOptions para setar opções de menu dinâmicamente */}
-              {drawerOptions.map(drawerOption => (
+              {drawerOptions.map((drawerOption) => (
                 <ListItemLink
                   to={drawerOption.path}
                   key={drawerOption.path}
@@ -98,6 +99,17 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({
                   onClick={smDown ? toggleDrawerOpen : undefined}
                 />
               ))}
+            </List>
+          </Box>
+
+          <Box>
+            <List component="nav">
+              <ListItemButton onClick={toggleTheme}>
+                <ListItemIcon>
+                  <Icon>dark_modeicon</Icon>
+                </ListItemIcon>
+                <ListItemText primary="Alternar tema" />
+              </ListItemButton>
             </List>
           </Box>
         </Box>

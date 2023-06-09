@@ -83,3 +83,8 @@ Criando layout base para as páginas: https://www.youtube.com/watch?v=AGapA_SvEW
 
 Layout base responsivo: https://www.youtube.com/watch?v=OGLN3GTh2Yg&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=14&ab_channel=LucasSouzaDev
 - criado configuração de responsividade base no LayoutBaseDePagina
+
+
+Configurando troca de tema dark e light: https://www.youtube.com/watch?v=5FLodwUf2kA&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=15&ab_channel=LucasSouzaDev
+- Adicionado funcionalidade de alternar tema no final do menu lateal em src/shared/components/menu-lateral/MenuLateral.tsx
+- Adicionado estilização de constraste de tema para textos e icon em src/shared/themes/Dark.ts
