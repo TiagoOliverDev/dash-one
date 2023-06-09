@@ -73,3 +73,9 @@ Opções do drawer: https://www.youtube.com/watch?v=63chTxv8MPM&list=PL29TaWXah3
 - E no index do routes dentro de um useEffect estamos usando setDrawerOptions para setar as opções de menu desejada
 
 
+Criando layout base para as páginas: https://www.youtube.com/watch?v=AGapA_SvEWs&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=13&ab_channel=LucasSouzaDev
+- fomos em src/shared/layouts e criamos o componente LayoutBaseDePagina.tsx e nele criamos a base do layout
+- no index src/shared/layouts importamos o componente LayoutBaseDePagina
+- em src/pages criamos o componente dashboard e nele chamamos o LayoutBaseDePagina e dentro dele podemos passar o conteúdo children
+- em src/pages importamos o componente dashboard criado
+- em src/routes importamos o Dashboard dentro do parâmetro element do router /pagina-inicial
