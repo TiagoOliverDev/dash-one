@@ -114,7 +114,7 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({
           </Box>
         </Box>
       </Drawer>
-
+                                                                                
       <Box height="100vh" marginLeft={smDown ? 0 : theme.spacing(28)}>
         {children} {/* AppRoutes ta aqui */}
       </Box>

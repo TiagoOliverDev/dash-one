@@ -88,3 +88,8 @@ Layout base responsivo: https://www.youtube.com/watch?v=OGLN3GTh2Yg&list=PL29TaW
 Configurando troca de tema dark e light: https://www.youtube.com/watch?v=5FLodwUf2kA&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=15&ab_channel=LucasSouzaDev
 - Adicionado funcionalidade de alternar tema no final do menu lateal em src/shared/components/menu-lateral/MenuLateral.tsx
 - Adicionado estilização de constraste de tema para textos e icon em src/shared/themes/Dark.ts
+
+Barra de ferramentas da listagem: https://www.youtube.com/watch?v=CIGU9trS3G4&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=16&ab_channel=LucasSouzaDev
+- src/shared/components/barra-de-ferramentas/BarraDeFerramentas.tsx criamos o componente BarraDeFerramentas e toda sua lógica
+- importamos ele no seu devido index
+- em src/pages/dashboard/Dashboard.tsx chamamos ele
