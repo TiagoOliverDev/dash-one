@@ -93,3 +93,6 @@ Barra de ferramentas da listagem: https://www.youtube.com/watch?v=CIGU9trS3G4&li
 - src/shared/components/barra-de-ferramentas/BarraDeFerramentas.tsx criamos o componente BarraDeFerramentas e toda sua lógica
 - importamos ele no seu devido index
 - em src/pages/dashboard/Dashboard.tsx chamamos ele
+
+Ferramentas de detalhe: https://www.youtube.com/watch?v=U1Y-XYQcLOg&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=17&ab_channel=LucasSouzaDev
+- 
