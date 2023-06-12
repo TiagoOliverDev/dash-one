@@ -95,4 +95,4 @@ Barra de ferramentas da listagem: https://www.youtube.com/watch?v=CIGU9trS3G4&li
 - em src/pages/dashboard/Dashboard.tsx chamamos ele
 
 Ferramentas de detalhe: https://www.youtube.com/watch?v=U1Y-XYQcLOg&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=17&ab_channel=LucasSouzaDev
-- 
+- Criação do src/shared/components/ferramentas-de-detalhe/FerramentasDeDetalhe.tsx para criar os botões da dash
