@@ -103,5 +103,10 @@ Ferramentas de detalhe: https://www.youtube.com/watch?v=U1Y-XYQcLOg&list=PL29TaW
  - Em src/shared/components/ferramentas-de-detalhe/FerramentasDeDetalhe.tsx criamos uma interface com atributos e eventos dos nossos botões
 
 
-
+ Adicionando o skeleton do Material UI: https://www.youtube.com/watch?v=jPSeDOyPAmY&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=19&ab_channel=LucasSouzaDev
+ - No mesmo arquivo FerramentasDeDetalhe.tsx na interface criamos novos atributos para cada botão para vermos ele carregando atravez do skeleton
+ - Criamos um skeleton para cada botão e editamos sua altura e largura
+ - condicionamos cada botão com o skeleton
+ - em src/pages/dashboard/Dashboard.tsx no componente importato "FerramentasDeDetalhe" teremos vários parâmetros de botões carregando e useEffect
+ 
 
