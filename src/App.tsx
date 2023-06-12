@@ -14,11 +14,10 @@ export const App = () => {
         <BrowserRouter>
           <MenuLateral>
             {/* Deixando o AppRoutes sendo filho do MenuLateral, sendo recebido em children */}
-            <AppRoutes/>
+            <AppRoutes />
           </MenuLateral>
         </BrowserRouter>
       </DrawerProvider>
     </AppThemeProvider>
   );
-}
-
+};
