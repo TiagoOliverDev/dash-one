@@ -110,3 +110,5 @@ Ferramentas de detalhe: https://www.youtube.com/watch?v=U1Y-XYQcLOg&list=PL29TaW
  - em src/pages/dashboard/Dashboard.tsx no componente importato "FerramentasDeDetalhe" teremos vários parâmetros de botões carregando e useEffect
  
 
+Como configurar componente Responsivo React com Material UI: https://www.youtube.com/watch?v=jnT_NZXREiI&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=20&ab_channel=LucasSouzaDev
+- Em src/shared/components/ferramentas-de-detalhe/FerramentasDeDetalhe.tsx foi inserido algumas validações referente a responsividade dos botões
