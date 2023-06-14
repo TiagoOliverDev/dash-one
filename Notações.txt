@@ -100,15 +100,23 @@ Ferramentas de detalhe: https://www.youtube.com/watch?v=U1Y-XYQcLOg&list=PL29TaW
 
 
  Atributos nos botões da ferramentas de detalhe: https://www.youtube.com/watch?v=r1-9Tj0qO0I&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=18&ab_channel=LucasSouzaDev
- - Em src/shared/components/ferramentas-de-detalhe/FerramentasDeDetalhe.tsx criamos uma interface com atributos e eventos dos nossos botões
+- Em src/shared/components/ferramentas-de-detalhe/FerramentasDeDetalhe.tsx criamos uma interface com atributos e eventos dos nossos botões
 
 
  Adicionando o skeleton do Material UI: https://www.youtube.com/watch?v=jPSeDOyPAmY&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=19&ab_channel=LucasSouzaDev
- - No mesmo arquivo FerramentasDeDetalhe.tsx na interface criamos novos atributos para cada botão para vermos ele carregando atravez do skeleton
- - Criamos um skeleton para cada botão e editamos sua altura e largura
- - condicionamos cada botão com o skeleton
- - em src/pages/dashboard/Dashboard.tsx no componente importato "FerramentasDeDetalhe" teremos vários parâmetros de botões carregando e useEffect
- 
+- No mesmo arquivo FerramentasDeDetalhe.tsx na interface criamos novos atributos para cada botão para vermos ele carregando atravez do skeleton
+- Criamos um skeleton para cada botão e editamos sua altura e largura
+- condicionamos cada botão com o skeleton
+- em src/pages/dashboard/Dashboard.tsx no componente importato "FerramentasDeDetalhe" teremos vários parâmetros de botões carregando e useEffect
+
 
 Como configurar componente Responsivo React com Material UI: https://www.youtube.com/watch?v=jnT_NZXREiI&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=20&ab_channel=LucasSouzaDev
 - Em src/shared/components/ferramentas-de-detalhe/FerramentasDeDetalhe.tsx foi inserido algumas validações referente a responsividade dos botões
+
+
+Criando um backend rápido com Json Server: https://www.youtube.com/watch?v=BLmEyAzu5qc&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=21&ab_channel=LucasSouzaDev
+- Dica: deixar o json server na dependências do projeto, pois ao dar yarn install ele já irá instalar
+- Criamos a pasta mock na raiz do projeto e dentro dela um README.MD ensinando como usar o json server e um database.json que será o arquivo q o json server irá utilizar
+- instalar com: yarn add -D json-server
+- ativar com: yarn run json-server -w -p 3333 ./mock/database.json
+- ir em package.json em "scripts" e adicionar "mock": "json-server -w -p 3333 ./mock/database.json", com isso podemos rodar apenas com yarn mock
