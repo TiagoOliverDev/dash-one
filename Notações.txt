@@ -129,4 +129,5 @@ Como configurar o axios no React: https://www.youtube.com/watch?v=t0RjS2aNgus&li
 - Ainda em src/shared/services/Api/axios-config criamos uma pasta interceptors onde temos dois arquivos para interceptar mensagens de erro e sucesso da api consultada.
 
 
-
+Como configurar variáveis ambiente no React: https://www.youtube.com/watch?v=L1H_Nwll6m8&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=23&ab_channel=LucasSouzaDev
+- Em src/shared/environment no index.ts criamos um objeto Environment e nele criamos variaveis de ambientes que serão reutilizadas em diversos lugares do projeto
