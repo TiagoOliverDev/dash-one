@@ -120,3 +120,13 @@ Criando um backend rápido com Json Server: https://www.youtube.com/watch?v=BLmE
 - instalar com: yarn add -D json-server
 - ativar com: yarn run json-server -w -p 3333 ./mock/database.json
 - ir em package.json em "scripts" e adicionar "mock": "json-server -w -p 3333 ./mock/database.json", com isso podemos rodar apenas com yarn mock
+
+
+Como configurar o axios no React: https://www.youtube.com/watch?v=t0RjS2aNgus&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=22&ab_channel=LucasSouzaDev
+- Axios é uma ferramenta do javascript para consultas no backend (api)
+- Instalamos com yarn add axios
+- Dentro de src/shared/services/Api criamos uma pasta axios-config e um index.ts dentro dela onde fizemos a config inicial do axios
+- Ainda em src/shared/services/Api/axios-config criamos uma pasta interceptors onde temos dois arquivos para interceptar mensagens de erro e sucesso da api consultada.
+
+
+
