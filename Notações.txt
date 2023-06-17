@@ -135,3 +135,7 @@ Como configurar variáveis ambiente no React: https://www.youtube.com/watch?v=L1
 
 Isolando acesso ao backend: https://www.youtube.com/watch?v=-2QNW-tFlVo&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=24&ab_channel=LucasSouzaDev
 - Em src/shared/services/api criamos uma pasta pessoas e dentro dela o arquivo PessoasService.ts onde nesse arquivo iniciamos a lógica do crud
+
+
+Finalizando os services de acesso ao backend: https://www.youtube.com/watch?v=dUuqBaDGajI&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=25&ab_channel=LucasSouzaDev
+- Em src/shared/services/api/pessoas/PessoasService.ts finalizamos a lógica dos métodos de interação com o backend (CRUD)
