@@ -131,3 +131,7 @@ Como configurar o axios no React: https://www.youtube.com/watch?v=t0RjS2aNgus&li
 
 Como configurar variáveis ambiente no React: https://www.youtube.com/watch?v=L1H_Nwll6m8&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=23&ab_channel=LucasSouzaDev
 - Em src/shared/environment no index.ts criamos um objeto Environment e nele criamos variaveis de ambientes que serão reutilizadas em diversos lugares do projeto
+
+
+Isolando acesso ao backend: https://www.youtube.com/watch?v=-2QNW-tFlVo&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=24&ab_channel=LucasSouzaDev
+- Em src/shared/services/api criamos uma pasta pessoas e dentro dela o arquivo PessoasService.ts onde nesse arquivo iniciamos a lógica do crud
