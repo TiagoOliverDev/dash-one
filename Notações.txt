@@ -139,3 +139,10 @@ Isolando acesso ao backend: https://www.youtube.com/watch?v=-2QNW-tFlVo&list=PL2
 
 Finalizando os services de acesso ao backend: https://www.youtube.com/watch?v=dUuqBaDGajI&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=25&ab_channel=LucasSouzaDev
 - Em src/shared/services/api/pessoas/PessoasService.ts finalizamos a lógica dos métodos de interação com o backend (CRUD)
+
+
+Criando tela de cidades: https://www.youtube.com/watch?v=ECQ4QWObNAE&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=26&ab_channel=LucasSouzaDev
+- Em pages criamos a pasta cidades e o arquivo ListagemDeCidade.tsx e importamos no index.ts do pages
+- Em ListagemDeCidade.tsx criamos de fato nosso componente de listagem onde importamos o LayoutBaseDePagina e FerramentasDaListagem
+- Detalhe importante é que habilitamos a URL para capturar o que for digitado no campo de busca com useSearchParams(), para caso o usuário queira enviar a url com uma determinada cidade já pesquisada.
+- Em routes criamos sua rota /cidades
