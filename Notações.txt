@@ -158,3 +158,7 @@ Como impedir consultas desnecessárias com o useDebounce: https://www.youtube.co
 - Em src/hooks criamos o useDebounce que é um hook para aplicar delay em certos pontos da aplicação
 - Ao chamar o useDebounce passamos o delay que queremos e dizemos se é o primeiro acesso a página ou não
 - Na ListagemDePessoas.tsx chamamos o useDebounce e no useEffecct colocamos a consulta backend dentro do useDebounce
+
+
+Adicionando tabela para listagem de pessoas: https://www.youtube.com/watch?v=BKsMVrVQmiY&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=29&ab_channel=LucasSouzaDev
+- Criado componente de tabela para listar os dados do backend
