@@ -152,3 +152,9 @@ Consultando o backend e montando listagem no React: https://www.youtube.com/watc
 - Alteramos ListagemDeCidade.tsx para ListagemDePessoas.tsx
 - Dentro do ListagemDePessoas.tsx criamos um useEffect e fizemos a consulta no backend
 - Em src/routes/index.tsx atualizamos o componente para ListagemDePessoas
+
+
+Como impedir consultas desnecessárias com o useDebounce: https://www.youtube.com/watch?v=KSinhtsr6q8&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=28&ab_channel=LucasSouzaDev
+- Em src/hooks criamos o useDebounce que é um hook para aplicar delay em certos pontos da aplicação
+- Ao chamar o useDebounce passamos o delay que queremos e dizemos se é o primeiro acesso a página ou não
+- Na ListagemDePessoas.tsx chamamos o useDebounce e no useEffecct colocamos a consulta backend dentro do useDebounce
