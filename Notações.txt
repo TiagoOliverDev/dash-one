@@ -146,3 +146,9 @@ Criando tela de cidades: https://www.youtube.com/watch?v=ECQ4QWObNAE&list=PL29Ta
 - Em ListagemDeCidade.tsx criamos de fato nosso componente de listagem onde importamos o LayoutBaseDePagina e FerramentasDaListagem
 - Detalhe importante é que habilitamos a URL para capturar o que for digitado no campo de busca com useSearchParams(), para caso o usuário queira enviar a url com uma determinada cidade já pesquisada.
 - Em routes criamos sua rota /cidades
+
+
+Consultando o backend e montando listagem no React: https://www.youtube.com/watch?v=oCOAjBmzJ-Q&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=27&ab_channel=LucasSouzaDev
+- Alteramos ListagemDeCidade.tsx para ListagemDePessoas.tsx
+- Dentro do ListagemDePessoas.tsx criamos um useEffect e fizemos a consulta no backend
+- Em src/routes/index.tsx atualizamos o componente para ListagemDePessoas
