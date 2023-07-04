@@ -162,3 +162,8 @@ Como impedir consultas desnecessárias com o useDebounce: https://www.youtube.co
 
 Adicionando tabela para listagem de pessoas: https://www.youtube.com/watch?v=BKsMVrVQmiY&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=29&ab_channel=LucasSouzaDev
 - Criado componente de tabela para listar os dados do backend
+
+
+Adicionando loading na listagem de pessoas: https://www.youtube.com/watch?v=I3O6MwcNH9M&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=30&ab_channel=LucasSouzaDev
+- Criado componente de progress com LinearProgress no ListagemDePessoas.tsx
+- Feito validação para mostrar mensagem de "Nenhum registro encontrado" dentro do caption
