@@ -167,3 +167,8 @@ Adicionando tabela para listagem de pessoas: https://www.youtube.com/watch?v=BKs
 Adicionando loading na listagem de pessoas: https://www.youtube.com/watch?v=I3O6MwcNH9M&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=30&ab_channel=LucasSouzaDev
 - Criado componente de progress com LinearProgress no ListagemDePessoas.tsx
 - Feito validação para mostrar mensagem de "Nenhum registro encontrado" dentro do caption
+
+
+Adicionando paginação na listagem com React: https://www.youtube.com/watch?v=R6fRpZqdk4s&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=31&ab_channel=LucasSouzaDev
+- criado a função pagina que atravez do useMemo captura o parâmetro pagina na url em ListagemDePessoas.tsx
+- Criado o componente pagination e sua lógica

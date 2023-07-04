@@ -7,7 +7,7 @@ export const useDebounce = (delay = 1000, notDelayInFirstTime = true) => {
     // o isFirstTime serve para os casos em que o usuário entrou a primeira vez na página, nesse caso é importante consultar o backend ao mesmo tempo que entra na página
     const debouncing = useRef<NodeJS.Timeout>();
     const isFirstTime = useRef(notDelayInFirstTime);
-
+    
     const debounce = useCallback((func: () => void) => {
         if(isFirstTime.current){
             isFirstTime.current = false;
