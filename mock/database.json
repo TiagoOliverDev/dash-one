@@ -1,94 +1,82 @@
 {
-    "pessoas": [
-        {
-            "id": 1,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Tiago Oliveira"
-        },
-        {
-            "id": 2,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Paulo Oliveira"
-        },
-        {
-            "id": 3,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Ester Oliveira"
-        },
-        {
-            "id": 4,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Sabrina Oliveira"
-        },
-        {
-            "id": 5,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Hillary Oliveira"
-        },
-        {
-            "id": 6,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Junior Oliveira"
-        },
-        {
-            "id": 7,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Milena Oliveira"
-        },
-        {
-            "id": 8,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Dudu Oliveira"
-        },
-        {
-            "id": 9,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Joe Oliveira"
-        },
-        {
-            "id": 10,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Lucas Oliveira"
-        },
-        {
-            "id": 11,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Gledeson Oliveira"
-        },
-        {
-            "id": 12,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Paulo Oliveira"
-        },
-        {
-            "id": 13,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Ester Oliveira"
-        },
-        {
-            "id": 14,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Sabrina Oliveira"
-        },
-        {
-            "id": 15,
-            "email": "tiago@dev.com",
-            "cidadeId": 2,
-            "nomeCompleto": "Hillary Oliveira"
-        }
-    ]
+  "pessoas": [
+    {
+      "id": 1,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Tiago Oliveira"
+    },
+    {
+      "id": 2,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Paulo Oliveira"
+    },
+    {
+      "id": 3,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Ester Oliveira"
+    },
+    {
+      "id": 6,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Junior Oliveira"
+    },
+    {
+      "id": 7,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Milena Oliveira"
+    },
+    {
+      "id": 8,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Dudu Oliveira"
+    },
+    {
+      "id": 9,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Joe Oliveira"
+    },
+    {
+      "id": 10,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Lucas Oliveira"
+    },
+    {
+      "id": 11,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Gledeson Oliveira"
+    },
+    {
+      "id": 12,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Paulo Oliveira"
+    },
+    {
+      "id": 13,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Ester Oliveira"
+    },
+    {
+      "id": 14,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Sabrina Oliveira"
+    },
+    {
+      "id": 15,
+      "email": "tiago@dev.com",
+      "cidadeId": 2,
+      "nomeCompleto": "Hillary Oliveira"
+    }
+  ]
 }
