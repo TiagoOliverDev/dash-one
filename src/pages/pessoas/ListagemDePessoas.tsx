@@ -35,7 +35,6 @@ export const ListagemDePessoas: React.FC = () => {
             PessoasService.getAll(pagina, busca)
                 .then((result) => {
                     setIsLoading(false) //assim que realizou a consulta já seta false aqui para parar de mostrar o feedback para o user
-
                     if(result instanceof Error){
                         //caso der erro na consulta     
                         alert(result.message);
@@ -74,6 +73,7 @@ export const ListagemDePessoas: React.FC = () => {
                     mostrarInputBusca={true}
                     textoDaBusca={busca}
                     textoDaBuscaNovo="Nova"
+                    aoClicarEmNovo={() => navigate('/pessoas/detalhe/nova')}
                     aoMudarTextoDeBusca={texto => setSearchParams({ busca: texto, pagina: '1' }, { replace: true })}
                 />
             }

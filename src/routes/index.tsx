@@ -1,14 +1,14 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useDrawerContext } from "../shared/contexts";
 import { useEffect } from "react";
-import { Dashboard, ListagemDePessoas } from "../pages";
+import { Dashboard, DetalheDePessoas, ListagemDePessoas } from "../pages";
 
 export const AppRoutes = () => {
   const { setDrawerOptions } = useDrawerContext();
 
   // useEffect garante que o que estiver dentro dele seja executado somente uma vez
   useEffect(() => {
-    //setando as opções de menu na sidebar lateral
+  //setando as opções de menu na sidebar lateral
     setDrawerOptions([
       {
         icon: "home",
@@ -26,13 +26,13 @@ export const AppRoutes = () => {
         label: "Pessoas",
       },
     ]);
-  }, []);
+  }, []); 
 
   return (
     <Routes>
       <Route path="/pagina-inicial" element={<Dashboard />}></Route>
       <Route path="/pessoas" element={<ListagemDePessoas />}></Route>     
-      <Route path="/pessoas/detalhe/:id" element={<p>Detalhe</p>}></Route>                                
+      <Route path="/pessoas/detalhe/:id" element={<DetalheDePessoas/ >}></Route>                                
       <Route
         path="*"
         element={<Navigate to={"/pagina-inicial"}></Navigate>}

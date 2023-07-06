@@ -178,3 +178,10 @@ Configurando ações da listagem: https://www.youtube.com/watch?v=PVA4N2ENT2I&li
 - Criado a função handleDelete() para deletar um registro pelo id
 - Com useNavigate habilitamos a navegação para tela de edição de registro no icone edit
 
+
+Tela de criação e edição de registro: https://www.youtube.com/watch?v=yIou2bprRmI&list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ&index=33&ab_channel=LucasSouzaDev
+- Criado o componente DetalheDePessoas.tsx
+- Criado as lógicas iniciais das funções dos botões
+
+
+
